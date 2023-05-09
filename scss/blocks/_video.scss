@@ -1,0 +1,40 @@
+.video {
+  margin-top: 152px;
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    @include tablet {
+      gap: 30px;
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    @include text($ff__title, 700, 60px, 70px, $white);
+    margin-bottom: 50px;
+    @include tablet {
+      @include text($ff__title, 700, 36px, 54px, $white);
+    }
+  }
+
+  &__desc {
+    @include text($ff, 400, 21px, 39px, $white_07);
+    letter-spacing: -0.656526px;
+    @include tablet {
+      @include text($ff, 400, 16px, 24px, $white_07);
+      margin-bottom: 50px;
+    }
+  }
+
+  &__photo {
+   img {
+    max-width: 1200px;
+   }
+   @include tablet {
+    img {
+      max-width: 327px;
+    }
+   }
+  }
+}

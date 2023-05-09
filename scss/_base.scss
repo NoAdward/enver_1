@@ -1,0 +1,26 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $ff;
+    background-color: $bg;
+    margin-inline: auto;
+}
+
+.container {
+    padding: 0 20px;
+    max-width: $container;
+    margin-inline: auto;
+}
+
+.btn {
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+  
+}
+.material-icons {
+	cursor: pointer;
+}

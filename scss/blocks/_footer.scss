@@ -1,0 +1,30 @@
+.footer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include tablet {
+    flex-direction: column;
+    ;
+  }
+
+  &__support {
+    display: flex;
+    gap: 40px;
+    @include tablet {
+        margin-top: 40px;
+        flex-direction: column;
+        margin-bottom: 40px;
+      }
+  }
+
+  &__item {
+    @include text($ff, 400, 18px, 25px, $white_07);
+    text-align: center;
+  }
+
+  &__copy {
+    @include text($ff, 400, 16px, 38px, $white_07);
+    letter-spacing: -0.500211px;
+  }
+}
